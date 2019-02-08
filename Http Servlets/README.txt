@@ -1,5 +1,5 @@
 
-SER422 - Web Application Development
+Web Application Development
 ----------------------------------------------------------------------------
 Author: Amanjot Singh
 email: asing225@asu.edu
