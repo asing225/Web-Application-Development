@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <display-name>Part 2</display-name>
+  <description>Session for SER422</description>
+
+    <servlet>
+        <servlet-name>WelcomePageServlet</servlet-name>
+        <servlet-class>edu.asu.ser422.WelcomePageServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>NameServlet</servlet-name>
+        <servlet-class>edu.asu.ser422.NameInputServlet</servlet-class>
+    </servlet>
+   <servlet>
+        <servlet-name>LanguageServlet</servlet-name>
+        <servlet-class>edu.asu.ser422.LanguageInputServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DaysServlet</servlet-name>
+        <servlet-class>edu.asu.ser422.DaysInputServlet</servlet-class>
+    </servlet>
+  	<servlet>
+        <servlet-name>DreamServlet</servlet-name>
+        <servlet-class>edu.asu.ser422.DreamJobServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SubmitDetailsServlet</servlet-name>
+        <servlet-class>edu.asu.ser422.SubmitDetailsServlet</servlet-class>
+    </servlet>
+    <servlet>
+    <servlet-name>NewProgrammer</servlet-name>
+    <servlet-class>edu.asu.ser422.NewProgrammerServlet</servlet-class>
+    <init-param>
+    	<param-name>programmersFile</param-name>
+    	<param-value>/resources/programmers.xml</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>Programmers</servlet-name>
+    <servlet-class>edu.asu.ser422.ProgrammersServlet</servlet-class>
+    <init-param>
+    	<param-name>programmersFile</param-name>
+    	<param-value>/resources/programmers.xml</param-value>
+    </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>WelcomePageServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NameServlet</servlet-name>
+    <url-pattern>/name</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LanguageServlet</servlet-name>
+    <url-pattern>/languages</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DaysServlet</servlet-name>
+    <url-pattern>/days</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DreamServlet</servlet-name>
+    <url-pattern>/dream</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SubmitDetailsServlet</servlet-name>
+    <url-pattern>/final</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewProgrammer</servlet-name>
+    <url-pattern>/newprogrammer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Programmers</servlet-name>
+    <url-pattern>/programmers</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
