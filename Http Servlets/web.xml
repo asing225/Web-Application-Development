@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <display-name>New Programmer Servlet</display-name>
+  <description>Lab1 for SER422</description>
+  
+  <servlet>
+    <servlet-name>NewProgrammer</servlet-name>
+    <servlet-class>edu.asu.ser422.NewProgrammerServlet</servlet-class>
+    <init-param>
+    	<param-name>programmersFile</param-name>
+    	<param-value>/resources/programmers.xml</param-value>
+    </init-param>
+    	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>Programmers</servlet-name>
+    <servlet-class>edu.asu.ser422.ProgrammersServlet</servlet-class>
+    <init-param>
+    	<param-name>programmersFile</param-name>
+    	<param-value>/resources/programmers.xml</param-value>
+    </init-param>
+    	<load-on-startup>1</load-on-startup>
+  </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>NewProgrammer</servlet-name>
+    <url-pattern>/newprogrammer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Programmers</servlet-name>
+    <url-pattern>/programmers</url-pattern>
+  </servlet-mapping>
+  
+ <welcome-file-list>
+   <welcome-file>index.html</welcome-file>
+ </welcome-file-list>
+
+</web-app>
