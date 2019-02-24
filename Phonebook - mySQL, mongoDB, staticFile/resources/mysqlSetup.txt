@@ -1,0 +1,24 @@
+***************************************************************************************************************
+Follow the following instructions to setup the database on macOS for this project:
+1. System requirements - mySQL should be installed on the system.
+2. Run the mysql using terminal and execute the following queries:
+----------------------------------------------------------------------
+CREATE DATABASE phonebook_app;
+----------------------------------------------------------------------
+USE phonebook_app;
+----------------------------------------------------------------------
+CREATE TABLE phonebook(
+     firstname varchar(30),
+     lastname varchar(30),
+     phone varchar(15)
+     );
+----------------------------------------------------------------------
+INSERT INTO phonebook
+     values
+     ("Harley", "Quinn", "12345"),
+     ("Black", "Panther", "892378"),
+     ("Wonder", "Woman", "8234"),
+     ("Captain", "America", "88"),
+     ("Bruce", "Wayne", "378"),
+     ("Spider", "Man", "629");
+----------------------------------------------------------------------
