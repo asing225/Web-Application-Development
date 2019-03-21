@@ -1,0 +1,7 @@
+{
+  "name": "Lab3EC1",
+  "version": "0.1.0",
+  "description": "SER422 REST Lab3 EC1",
+  "title": "PhoneBook REST API",
+  "url" : "https://localhost:8080/lab3ec1/rest/"
+}
